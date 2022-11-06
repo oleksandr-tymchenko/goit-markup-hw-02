@@ -1,0 +1,66 @@
+body {
+    background-color: #FFFFFF;
+    color: #757575;
+}
+.list {
+    list-style: none;
+}
+/* Колір основного тексту #757575 */
+/* Додатковий колір #212121 */
+/* Білий (Хедер) #FFFFFF */
+/* Чорний #000000 */
+/* Сірий фон #2F303A; */
+/* Акцент #2196F3 */
+/* Фон додатковий #F5F4FA; */
+
+header {
+    
+}
+
+/* site-nav */
+.logo {
+    color: #000000;
+}
+.site-nav .link {
+    color: #212121;
+}
+.site-nav .link:hover, .site-nav .link:focus {
+    color: #2196F3;
+}
+.contakts .cont-link {
+    color: #757575;
+}
+.contakts .cont-link:hover{
+    color: #2196F3;
+}
+
+/* Main */
+/* hero */
+.hero {
+    background-color: #2F303A;
+    color: #FFFFFF;
+}
+.button {
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+
+/* section */
+.section {
+    
+}
+.section-title {
+    color: #212121;
+}
+.section-h3 {
+    color: #212121;
+}
+
+/* portfolio */
+.button-ptf {
+    background-color: #F5F4FA;
+}
+.button-ptf:hover, .button-ptf.focus {
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
