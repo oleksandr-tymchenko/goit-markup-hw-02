@@ -12,37 +12,51 @@ body {
 /* Сірий фон #2F303A; */
 /* Акцент #2196F3 */
 /* Фон додатковий #F5F4FA; */
-
+:root{
+    --brand-color: #757575; --second-color:#212121; --main-background:#FFFFFF;
+    --background-head:#2F303A; --background-add:#F5F4FA;
+    --accent-color:#2196F3;
+}
 header {
     
+}
+/* link */
+.link {
+    text-decoration: none;
 }
 
 /* site-nav */
 .logo {
     color: #000000;
 }
+.logo-accent {
+    color: var(--accent-color);
+}
 .site-nav .link {
-    color: #212121;
+    color: var(--second-color);
 }
 .site-nav .link:hover, .site-nav .link:focus {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 .contakts .cont-link {
-    color: #757575;
+    color: var(--brand-color);
 }
 .contakts .cont-link:hover{
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 /* Main */
 /* hero */
 .hero {
-    background-color: #2F303A;
-    color: #FFFFFF;
+    background-color: var(--background-head);
+    
+}
+.hero-title {
+    color: var(--main-background);
 }
 .button {
-    background-color: #2196F3;
-    color: #FFFFFF;
+    background-color: var(--accent-color);
+    color: var(--main-background);
 }
 
 /* section */
@@ -50,17 +64,25 @@ header {
     
 }
 .section-title {
-    color: #212121;
+    color: var(--second-color);
 }
 .section-h3 {
-    color: #212121;
+    color: var(--second-color);
+}
+.section-team {
+    background-color: var(--background-add);
 }
 
-/* portfolio */
+/* footer */
+.foot {
+    background-color: var(--background-head);
+}
+
+/* portfolio */ 
 .button-ptf {
-    background-color: #F5F4FA;
+    background-color: var(--background-add);
 }
 .button-ptf:hover, .button-ptf.focus {
-    background-color: #2196F3;
-    color: #FFFFFF;
+    background-color: var(--accent-color);
+    color: var(--main-background);
 }
