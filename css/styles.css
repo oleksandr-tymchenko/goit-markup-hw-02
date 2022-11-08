@@ -1,10 +1,4 @@
-body {
-    background-color: #FFFFFF;
-    color: #757575;
-}
-.list {
-    list-style: none;
-}
+
 /* Колір основного тексту #757575 */
 /* Додатковий колір #212121 */
 /* Білий (Хедер) #FFFFFF */
@@ -13,35 +7,65 @@ body {
 /* Акцент #2196F3 */
 /* Фон додатковий #F5F4FA; */
 :root{
-    --brand-color: #757575; --second-color:#212121; --main-background:#FFFFFF;
-    --background-head:#2F303A; --background-add:#F5F4FA;
+    --brand-color: #757575; 
+    --second-color:#212121; 
+    --main-background:#FFFFFF;
+    --background-head:#2F303A; 
+    --background-add:#F5F4FA;
     --accent-color:#2196F3;
+    --head-logo:#000000;
 }
-header {
+body {
+    background-color: var(--main-background);
+    color: var(--brand-color);
+    font-family: 'Roboto', sans-serif;
+    /* letter-spacing: - растояние между словами */
     
 }
+
+.list {
+    list-style: none;
+}
+
 /* link */
 .link {
     text-decoration: none;
-}
+} 
+
 
 /* site-nav */
-.logo {
-    color: #000000;
+.header-logo {
+    color: var(--head-logo);
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
 }
 .logo-accent {
     color: var(--accent-color);
 }
 .site-nav .link {
     color: var(--second-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 .site-nav .link:hover, .site-nav .link:focus {
     color: var(--accent-color);
 }
-.contakts .cont-link {
+.cont-link {
     color: var(--brand-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
-.contakts .cont-link:hover{
+.cont-link:hover, .contakts .cont-link:focus{
     color: var(--accent-color);
 }
 
@@ -53,36 +77,136 @@ header {
 }
 .hero-title {
     color: var(--main-background);
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
-.button {
+button {
+    /* font-family: inherit;  */
+    cursor: pointer;
+
     background-color: var(--accent-color);
     color: var(--main-background);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    /* align-items: center; */
+    /* text-align: center; */
+    letter-spacing: 0.06em;
 }
 
 /* section */
-.section {
-    
-}
 .section-title {
     color: var(--second-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
-.section-h3 {
+.benefits-list {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+.benefits-title {
     color: var(--second-color);
-}
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+} 
+
 .section-team {
     background-color: var(--background-add);
+}
+.team-list {
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+.team-title {
+    color: var(--second-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
 }
 
 /* footer */
 .foot {
     background-color: var(--background-head);
 }
+.foot-logo {
+    color: var(--main-background);
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+.logo-accent {
+    color: var(--accent-color);
+}
+.adress {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+.foot-contakts {
+    color: var(--brand-color); 
+}
+.foot-contakts:hover, .foot-contakts:focus {
+    color: var(--accent-color);
+}
+.foot-address {
+    color: var(--main-background);
+}
+.foot-address:hover, .foot-address:focus {
+    color: var(--accent-color);
+}
 
 /* portfolio */ 
 .button-ptf {
+    color: var(--second-color);
     background-color: var(--background-add);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 .button-ptf:hover, .button-ptf.focus {
     background-color: var(--accent-color);
     color: var(--main-background);
+}
+.ptf-title {
+    color: var(--second-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.ptf-project {
+    color: var(--brand-color);
+
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
 }
